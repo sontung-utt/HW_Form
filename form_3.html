@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=VT323&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: "VT323", monospace;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 22px;
+        
+    }
+    form{
+        background-color: lemonchiffon;
+        width: 720px;
+        height: 470px;
+    }
+    h2{
+        color: blue;
+        background-color: mediumturquoise;
+        padding: 5px;
+        width: 700px;
+        margin-top: 10px;
+    }
+    .op1{
+        font-family: "VT323", monospace;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 15px;
+    }
+    .lb1 {
+        width: 120px;
+        height: 30px;
+        color: darkblue;
+        
+    }
+
+    .lb2 {
+        width: 100px;
+        height: 30px;
+        padding-bottom: 60px;
+        color: darkblue;
+    }
+
+    .td1 {
+        height: 40px;
+    }
+
+    .txt1 {
+        width: 250px;
+    }
+
+    .txt2 {
+        width: 135px;
+    }
+
+    .slt1 {
+        width: 130px;
+        height: 30px;
+        border-style: inset;
+    }
+
+    .txt1,
+    .txt2,
+    .txt4 {
+        height: 25px;
+        border-style: inset;
+    }
+
+    .txtarea {
+        border-style: inset;
+    }
+
+    .btn1 {
+        margin-left: 125px;
+    }
+
+    .btn1,
+    .btn2 {
+        height: 30px;
+        width: 80px;
+        border-style: inset;
+        font-family: "VT323", monospace;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 17px;
+    }
+</style>
+
+<body>
+    <form action="">
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+        <table>
+            <tr>
+                <td class="lb1"><label for="txt1">Họ và tên </label></td>
+                <td class="td1"><input type="text" id="txt1" class="txt1"></td>
+            </tr>
+            <tr>
+                <td class="lb1"><label for="txt2">Ngày sinh </label></td>
+                <td class="td1"><input type="text" id="txt2" class="txt2"></td>
+            </tr>
+            <tr>
+                <td class="lb1"><label>Giới tính</label></td>
+                <td class="td1"><input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="lb2"><label>Địa chỉ</label></td>
+                <td class="td1"><textarea name="" class="txtarea" cols="25" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td class="lb1"><label>Lớp</label></td>
+                <td class="td1"><select name="" class="slt1">
+                        <option value="" class="op1">--Chọn lớp--</option>
+                        <option value="A" class="op1">Lớp A</option>
+                        <option value="B" class="op1">Lớp B</option>
+                        <option value="C" class="op1">Lớp C</option>
+                        <option value="D" class="op1">Lớp D</option>
+                        <option value="E" class="op1">Lớp E</option>
+                        <option value="G" class="op1">Lớp G</option>
+                    </select> </td>
+            </tr>
+            <tr>
+                <td class="lb1"><label for="txt3">Email</label></td>
+                <td class="td1"><input type="text" id="txt3" class="txt4"></td>
+            </tr>
+            <tr>
+                <td class="lb1"><label for="txt4">Điện thoại</label></td>
+                <td class="td1"><input type="number" id="txt4" class="txt4"></td>
+            </tr>
+
+        </table>
+        <button type="submit" class="btn1">Đăng ký</button>
+        <button type="reset" class="btn2">Nhập lại</button>
+    </form>
+</body>
+
+</html>

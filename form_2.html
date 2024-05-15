@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=VT323&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: "VT323", monospace;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div1 {
+        background-color: paleturquoise;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 620px;
+
+    }
+
+    form {
+        background-color: white;
+        padding: 10px;
+    }
+
+    h2 {
+        background-color: orangered;
+        text-align: center;
+        margin: auto;
+        padding: 1px;
+        color: aliceblue;
+        font-weight: 50;
+        font-size: 40px;
+    }
+
+    .table1 {
+        margin: auto;
+    }
+
+    .td1 {
+        text-align: right;
+        margin-top: auto;
+
+    }
+
+
+    .td1,
+    .td4 {
+        height: 30px;
+        color: blue;
+    }
+
+    .td4 {
+        text-align: right;
+        padding-bottom: 55px;
+    }
+
+    .txt1 {
+        width: 250px;
+        height: 25px;
+        border-style: inset;
+    }
+
+    .txt2 {
+        width: 170px;
+        height: 25px;
+        border-style: inset;
+    }
+
+    .tdcb {
+        width: 120px;
+        color: orange;
+    }
+
+    .inp1 {
+        width: 120px;
+        font-family: "VT323", monospace;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 17px;
+        height: 25px;
+        border-style: inset;
+    }
+
+    .inp2 {
+        width: 80px;
+        margin-right: 70px;
+        font-family: "VT323", monospace;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 17px;
+        height: 25px;
+        border-style: inset;
+    }
+
+    .cb1 {
+        border-style: inset;
+    }
+</style>
+
+<body>
+    <div class="div1">
+        <form action="">
+            <h2>SỞ THÍCH CỦA BẠN</h2>
+            <table class="table1">
+                <tr>
+                    <td class="td1"><label for="txt1">Họ và tên: </label></td>
+                    <td class="td3"><input type="text" id="txt1" class="txt1"></td>
+                </tr>
+                <tr>
+                    <td class="td1"><label for="txt2">Email: </label></td>
+                    <td class="td2"><input type="text" id="txt2" class="txt2"></td>
+                </tr>
+                <tr>
+                    <td class="td4"><label for="">Sở thích: </label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td class="tdcb"><input type="checkbox" class="cb1"> Thể thao</td>
+                                <td class="tdcb"><input type="checkbox" class="cb1"> Âm nhạc</td>
+                                <td class="tdcb"><input type="checkbox" class="cb1"> Đọc sách</td>
+                            </tr>
+                            <tr>
+                                <td class="tdcb"><input type="checkbox" class="cb1"> Lướt web</td>
+                                <td class="tdcb"><input type="checkbox" class="cb1"> Chơi game</td>
+                                <td class="tdcb"><input type="checkbox" class="cb1"> Điện ảnh</td>
+                            </tr>
+                            <tr>
+                                <td class="tdcb"><input type="checkbox" class="cb1"> Du lịch</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <center>
+                <!-- <input type="submit" value="Gửi thông tin" class="inp1">
+            <input type="reset" value="Nhập lại" class="inp2"> -->
+                <button type="submit" class="inp1">Gửi thông tin</button>
+                <button type="reset" class="inp2">Nhập lại</button>
+            </center>
+        </form>
+    </div>
+</body>
+
+</html>

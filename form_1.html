@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 17px;
+        font-style: normal;
+    }
+    .num1{
+        width: 250px;
+        /* border: 1px solid bisque; */
+        border-radius: 4px;
+    }
+    .num2{
+        width: 60px;
+    }
+    .num3{
+        width: 20px;
+    }
+
+    .table1 {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        text-align: left;
+        width: 355px;
+        font-size: 15px;
+    }
+
+    .td3 {
+        font-size: 12px;
+    }
+
+    .td2 {
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .td1 {
+        height: 25px;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    .sp1 {
+        font-size: 15px;
+        padding-top: 100px;
+       
+    }
+
+    .tr1:nth-child(even){
+        background-color: wheat;
+    }
+
+    .tr1:nth-child(odd){
+        background-color:tan;
+    }
+    .tr2{
+        background-color:darkgrey;
+    }
+
+    h1 {
+        margin-bottom: -5px;
+    }
+</style>
+
+<body>
+    <form action="">
+        <h1>Market Research Survey</h1>
+        <span class="sp1">Please take a few moments to complete this satisfaction survey.</span>
+        <p><label for="num1"><b>What is your age range?</b></label></p>
+        <input type="number" class="num1" id="num1" placeholder="18-24">
+        <!-- <select name="age" id="num1" aria-placeholder="Choose-age-range">
+            <option value=""> 0 - 18 </option>
+            <option value=""> 18 - 24 </option>
+            <option value=""> 24 - 40</option>
+            <option value=""> >40 </option>
+        </select> -->
+        <p><label for="num2"><b>What is your yearly income range?</b></label></p>
+        <input type="number" class="num1" id="num2" placeholder="$0 - $25,000">
+        <p><label for="gd1"><b>Gender</b></label></p>
+        <input type="radio" name="gd"> Male <br>
+        <!-- checked: auto chọn -->
+        <input type="radio" name="gd"> Female
+        <p><b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b>
+        </p>
+        <input type="checkbox" name="prd"> Product 1 <br>
+        <input type="checkbox" name="prd"> Product 2 <br>
+        <input type="checkbox" name="prd"> Product 3 <br>
+        <p><b>How often would you use our new product?</b></p>
+        <input type="radio" name="time"> Daily <br>
+        <input type="radio" name="time"> Weekly <br>
+        <input type="radio" name="time"> Monthly <br>
+        <p><b>What would you pay for the new product?</b></p>
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="number" class="num2">,</td>
+                <td><input type="number" class="num3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td3">Dollars</td>
+                <td class="td3">Cents</td>
+            </tr>
+        </table>
+        <p><b>What features would you like to see in the new product.</b></p>
+        <textarea name="" rows="10" cols="100"></textarea>
+        <p>Please rate your level of agreement with the following statements.</p>
+        <table class="table1" border="1px">
+            <tr class="tr2">
+                <th></th>
+                <td class="td1"><b>Strongly Disagree</b></td>
+                <td class="td1"><b>Disagree</b></td>
+                <td class="td1"><b>Agree</b></td>
+                <td class="td1"><b>Strongly Agree</b></td>
+            </tr>
+            <tr class="tr1">
+                <th>Our products are priced fairly.</th>
+                <td class="td2"><input type="radio" name="1"><br>1</td>
+                <td class="td2"><input type="radio" name="1"><br>2</td>
+                <td class="td2"><input type="radio" name="1"><br>3</td>
+                <td class="td2"><input type="radio" name="1"><br>4</td>
+            </tr>
+            <tr class="tr1">
+                <th>Our products are high quality.</th>
+                <td class="td2"><input type="radio" name="2"><br>1</td>
+                <td class="td2"><input type="radio" name="2"><br>2</td>
+                <td class="td2"><input type="radio" name="2"><br>3</td>
+                <td class="td2"><input type="radio" name="2"><br>4</td>
+            </tr>
+            <tr class="tr1">
+                <th>You would recommend our product to a friend or coworker.</th>
+                <td class="td2"><input type="radio" name="3"><br>1</td>
+                <td class="td2"><input type="radio" name="3"><br>2</td>
+                <td class="td2"><input type="radio" name="3"><br>3</td>
+                <td class="td2"><input type="radio" name="3"><br>4</td>
+            </tr>
+        </table>
+        <br>
+        <input type="Submit">
+    </form>
+</body>
+
+</html>
